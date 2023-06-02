@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiidelab Sign-Up Form</title>
+    <link rel="stylesheet" href="./signupform.css">
+    <script defer src="signupform.js"></script>
+</head>
+<body>
+   <form action="">
+    <header>
+        <div>
+            <img src="./3009146.png" alt="">
+        </div>
+        <div>
+            <h2>Student Registration Form</h2>
+            <p>Fill out the form to apply for the training courses. 
+                You can consider your application accepted when
+                you recieve a confirmation email.
+            </p>
+        </div>
+    </header>
+    <fieldset>
+        <legend>Student Information</legend>
+        <input type="text" placeholder="First  Name" name="fname" id="fname" required>
+        <input type="text" placeholder="Middle  Name" name="mname" id="mname" required>
+        <input type="text" placeholder="Last  Name" name="lname" id="lname" required>
+        <input type="date" placeholder="Date of Birth" name="" id="date" name="date" required>
+        <input type="number" placeholder="Student ID" name="Student_ID" id="SID" required>
+    </fieldset>
+
+    <fieldset >
+        <legend>Address</legend>
+        <input type="text" placeholder="Street Address" name="Street_address" id="Street_address" required>
+        <input type="text" placeholder="City" name="city" id="city" required>
+        <input type="text" placeholder="State / Province" name="StateProvince" id="StateProvince" required>
+        <input type="text" placeholder="Country" name="Country" id="Country" required>
+        <input type="text" placeholder="ZIP Code" name="ZipCode" id="ZipCode" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Information</legend>
+        <input type="email" placeholder="E-mail" name="email" id="email" required>
+        <input type="email" name="cemail" id="cemail" required>
+    </fieldset>
+
+    <fieldset class="courses">
+        <legend>Courses</legend>
+        <button  id="addC">+ Add new record</button>
+        <div>
+            <select id="courses" name="courses" required>
+                <option value="course">Course</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="ReactJS">ReactJS</option>
+                <option value="TailwindCSS">TailwindCSS</option>
+            </select>
+            <select id="Level" name="level" required>
+                <option value="level">Level</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+            </select>
+            <select id="Language" name="Language" required>
+                <option value="Language">Language</option>
+                <option value="english">english</option>
+                <option value="french">french</option>
+            </select>
+            <select id="StartDate" name="StartDate" required>
+                <option value="StartDate">Start Date</option>
+                <option value="Spring">Spring</option>
+                <option value="Summer">Summer</option>
+            </select>
+        </div>
+
+
+    </fieldset>
+    <textarea name="comments" placeholder="Comments" id="comments" cols="30" rows="10" required></textarea>
+
+    <button id="submitB">Send Request</button>
+
+   </form> 
+   <section>
+    <h1>Student Registration Details</h1>
+    <ul class="studentInfo">
+        <h2>Student Information</h2>
+        <li id="firstname">First Name: </li>
+        <li id="middleName">Middle Name: </li>
+        <li id="lastName">Last Name: </li>
+        <li id="DOB">D.O.B: </li>
+        <li id="stID">Student ID: </li>
+    </ul>
+    <ul class="Address">
+        <h2>Address</h2>
+        <li id="sAdd">Street Address: </li>
+        <li id="C">City: </li>
+        <li id="SP">State / Province: </li>
+        <li id="CO">Country: </li>
+        <li id="ZC">Zip Code: </li>
+
+    </ul>
+    <ul class="contactInfo">
+        <h2>Contact Info</h2>
+        <li class="em">E-mail: </li>
+    </ul>
+    <ul class="course">
+        <h2>Courses</h2>
+        <li id="co">Course: </li>
+        <li id="lv">Level: </li>
+        <li id="lang">Language: </li>
+        <li id="sd">Start Date: </li>
+    </ul>
+   </section>
+</body>
+</html>
